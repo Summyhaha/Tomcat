@@ -1,0 +1,153 @@
+15-Jan-2015 10:47:48.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.15
+15-Jan-2015 10:47:48.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 2 2014 19:25:20 UTC
+15-Jan-2015 10:47:48.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.15.0
+15-Jan-2015 10:47:48.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+15-Jan-2015 10:47:48.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+15-Jan-2015 10:47:48.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jan-2015 10:47:48.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JAVA_HOME:             C:\Program Files\Java\jdk1.7.0_40\jre
+15-Jan-2015 10:47:48.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_40-b43
+15-Jan-2015 10:47:48.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jan-2015 10:47:48.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15
+15-Jan-2015 10:47:48.578 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15
+15-Jan-2015 10:47:48.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\conf\logging.properties
+15-Jan-2015 10:47:48.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jan-2015 10:47:48.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\endorsed
+15-Jan-2015 10:47:48.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15
+15-Jan-2015 10:47:48.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15
+15-Jan-2015 10:47:48.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\temp
+15-Jan-2015 10:47:48.589 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+15-Jan-2015 10:47:48.594 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+15-Jan-2015 10:47:49.448 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+15-Jan-2015 10:47:49.636 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+15-Jan-2015 10:47:49.650 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-apr-8080"]
+ java.lang.Exception: Socket bind failed: [730013] ???????????????¨ª????¡Á??????¡¤??????¡Á?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:453)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:730)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:456)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:842)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+15-Jan-2015 10:47:49.656 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:842)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730013] ???????????????¨ª????¡Á??????¡¤??????¡Á?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:453)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:730)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:456)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+15-Jan-2015 10:47:49.661 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+15-Jan-2015 10:47:49.686 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+ java.lang.Exception: Socket bind failed: [730013] ???????????????¨ª????¡Á??????¡¤??????¡Á?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:453)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:730)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:456)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:842)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+15-Jan-2015 10:47:49.689 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:842)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730013] ???????????????¨ª????¡Á??????¡¤??????¡Á?
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:453)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:730)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:456)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+15-Jan-2015 10:47:49.727 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2304 ms
+15-Jan-2015 10:47:49.790 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+15-Jan-2015 10:47:49.790 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.15
+15-Jan-2015 10:47:49.836 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\docs
+15-Jan-2015 10:47:50.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\docs has finished in 701 ms
+15-Jan-2015 10:47:50.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\examples
+15-Jan-2015 10:47:51.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\examples has finished in 615 ms
+15-Jan-2015 10:47:51.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\host-manager
+15-Jan-2015 10:47:51.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\host-manager has finished in 33 ms
+15-Jan-2015 10:47:51.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\manager
+15-Jan-2015 10:47:51.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\manager has finished in 34 ms
+15-Jan-2015 10:47:51.222 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\ROOT
+15-Jan-2015 10:47:51.248 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\Software\tomcat\apache-tomcat-8.0.15-windows-x64\apache-tomcat-8.0.15\webapps\ROOT has finished in 26 ms
+15-Jan-2015 10:47:51.252 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1496 ms
+15-Jan-2015 10:47:51.270 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:420)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+15-Jan-2015 10:47:51.273 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-8080"]
+15-Jan-2015 10:47:51.274 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+15-Jan-2015 10:47:51.274 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+15-Jan-2015 10:47:51.326 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-8080"]
+15-Jan-2015 10:47:51.327 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-8080"]
+15-Jan-2015 10:47:51.328 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+15-Jan-2015 10:47:51.329 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]
